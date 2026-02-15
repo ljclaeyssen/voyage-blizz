@@ -9,7 +9,8 @@
       "date": "2026-09-09",
       "label": "Mercredi 9 sept.",
       "activities": [
-        "Départ de France"
+        "Départ de France",
+        "Avion"
       ],
       "nightLocation": null
     },
@@ -19,7 +20,8 @@
       "activities": [
         "Arriver",
         "Uber LAX → Anaheim (~$55-70)",
-        "Chill piscine"
+        "Chill piscine de l'hotel",
+        "Petit tour dans Anaheim ?"
       ],
       "nightLocation": "Hotel Anaheim"
     },
@@ -47,8 +49,9 @@
       "activities": [
         "Uber Anaheim → Venice Beach (~$45-60)",
         "Poser les affaires à l'hôtel",
-        "In-N-Out Burger",
-        "Balade à pied jusqu'à Santa Monica Pier"
+        "In-N-Out Burger, tant qu'à faire !",
+        "Balade à pied jusqu'à Santa Monica Pier",
+        "Chill plage"
       ],
       "nightLocation": "Hôtel Venice Beach"
     },
@@ -57,9 +60,9 @@
       "label": "Mardi 15 sept.",
       "activities": [
         "Metro vers Hollywood Blvd",
-        "Walk of Fame / TCL Chinese Theatre",
+        "Walk of Fame / TCL Chinese Theatre, emblématiques",
         "Uber vers Griffith Observatory (~$25-35)",
-        "Coucher de soleil sur LA, vue panoramique sur le Hollywood Sign et la ville",
+        "Coucher de soleil sur LA, vue panoramique sur LA et Le Hollywood Sign, idéal en coucher de soleil",
         "Uber Griffith → Venice Beach (~$25-35)"
       ],
       "nightLocation": "Hôtel Venice Beach"

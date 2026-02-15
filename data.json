@@ -1,0 +1,68 @@
+{
+  "trip": {
+    "title": "Road Trip US 2026",
+    "startDate": "2026-09-09",
+    "endDate": "2026-09-17"
+  },
+  "days": [
+    {
+      "date": "2026-09-09",
+      "label": "Mercredi 9 sept.",
+      "activities": [
+        "Arrivée aux US",
+        "Récupérer la voiture de location"
+      ],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-10",
+      "label": "Jeudi 10 sept.",
+      "activities": [],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-11",
+      "label": "Vendredi 11 sept.",
+      "activities": [],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-12",
+      "label": "Samedi 12 sept.",
+      "activities": [],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-13",
+      "label": "Dimanche 13 sept.",
+      "activities": [],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-14",
+      "label": "Lundi 14 sept.",
+      "activities": [],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-15",
+      "label": "Mardi 15 sept.",
+      "activities": [],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "Mercredi 16 sept.",
+      "activities": [],
+      "nightLocation": "À définir"
+    },
+    {
+      "date": "2026-09-17",
+      "label": "Jeudi 17 sept.",
+      "activities": [
+        "Retour"
+      ],
+      "nightLocation": null
+    }
+  ]
+}

@@ -450,23 +450,21 @@
     @media (max-width: 1200px) {
       .content { padding: 2rem 2rem 3rem; }
       .grid { grid-template-columns: repeat(3, 1fr); }
-      .grid-bottom { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
+      .grid-bottom { grid-template-columns: repeat(3, 1fr); }
     }
 
     @media (max-width: 768px) {
       .content { padding: 1.5rem 1rem 2rem; }
+      .header { margin-bottom: 2rem; }
       .header h1 { font-size: 3rem; }
-      .grid, .grid-bottom {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
+      .road-line { margin-bottom: 2rem; }
       .grid, .grid-bottom {
         grid-template-columns: 1fr;
-        max-width: 100%;
+        gap: 0.75rem;
       }
+      .phase { margin-bottom: 0.75rem; }
+      .day-inner { padding: 1.25rem; }
+      .day-number { font-size: 2.5rem; }
     }
   </style>
 </head>

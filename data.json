@@ -2,7 +2,7 @@
   "trip": {
     "title": "Blizzcon 2026",
     "startDate": "2026-09-09",
-    "endDate": "2026-09-17"
+    "endDate": "2026-09-18"
   },
   "days": [
     {
@@ -78,6 +78,14 @@
       "activities": [
         "Uber Venice Beach → LAX (~$20-30)",
         "Retour en France"
+      ],
+      "nightLocation": null
+    },
+    {
+      "date": "2026-09-18",
+      "label": "Vendredi 18 sept.",
+      "activities": [
+        "Arrivée en France"
       ],
       "nightLocation": null
     }

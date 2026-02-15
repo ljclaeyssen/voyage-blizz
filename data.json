@@ -18,7 +18,7 @@
       "label": "Jeudi 10 sept.",
       "activities": [
         "Arriver",
-        "Trajet jusque Anaheim",
+        "Uber LAX → Anaheim (~$55-70)",
         "Chill piscine"
       ],
       "nightLocation": "Hotel Anaheim"
@@ -26,13 +26,13 @@
     {
       "date": "2026-09-11",
       "label": "Vendredi 11 sept.",
-      "activities": ["Disney ?"],
+      "activities": ["Disneyland Anaheim (~$104-180/pers)"],
       "nightLocation": "Hotel Anaheim"
     },
     {
       "date": "2026-09-12",
       "label": "Samedi 12 sept.",
-      "activities": ["Blizzcon"],
+      "activities": ["Blizzcon ($290/pers pour le week-end)"],
       "nightLocation": "Hotel Anaheim"
     },
     {
@@ -45,32 +45,39 @@
       "date": "2026-09-14",
       "label": "Lundi 14 sept.",
       "activities": [
-        "Partir vers l'airbnb à la plage",
-        "Chill Plage"
+        "Uber Anaheim → Venice Beach (~$45-60)",
+        "Poser les affaires à l'hôtel",
+        "In-N-Out Burger",
+        "Balade à pied jusqu'à Santa Monica Pier"
       ],
-      "nightLocation": "Airbnb à la plage"
+      "nightLocation": "Hôtel Venice Beach"
     },
     {
       "date": "2026-09-15",
       "label": "Mardi 15 sept.",
       "activities": [
-        "Visiter LA"
+        "Metro vers Hollywood Blvd",
+        "Walk of Fame / TCL Chinese Theatre",
+        "Uber vers Griffith Observatory (~$25-35)",
+        "Coucher de soleil sur LA",
+        "Uber Griffith → Venice Beach (~$25-35)"
       ],
-      "nightLocation": "Airbnb à la plage"
+      "nightLocation": "Hôtel Venice Beach"
     },
     {
       "date": "2026-09-16",
       "label": "Mercredi 16 sept.",
       "activities": [
-        "Chill Plage"
+        "Chill plage Venice Beach"
       ],
-      "nightLocation": "Airbnb à la plage"
+      "nightLocation": "Hôtel Venice Beach"
     },
     {
       "date": "2026-09-17",
       "label": "Jeudi 17 sept.",
       "activities": [
-        "Retour"
+        "Uber Venice Beach → LAX (~$20-30)",
+        "Retour en France"
       ],
       "nightLocation": null
     }

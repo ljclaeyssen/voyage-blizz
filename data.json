@@ -1,47 +1,42 @@
 {
   "trip": {
     "title": "Blizzcon 2026",
-    "startDate": "2026-09-09",
-    "endDate": "2026-09-18"
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-19"
   },
   "days": [
-    {
-      "date": "2026-09-09",
-      "label": "Mercredi 9 sept.",
-      "activities": [
-        "Départ de France",
-        "Avion"
-      ],
-      "nightLocation": null
-    },
     {
       "date": "2026-09-10",
       "label": "Jeudi 10 sept.",
       "activities": [
-        "Arriver",
+        "Départ de France le matin",
+        "Avion",
+        "Arrivée à LAX",
         "Uber LAX → Anaheim (~$55-70)",
-        "Chill piscine de l'hotel",
-        "Petit tour dans Anaheim ?"
+        "Chill piscine de l'hotel"
       ],
-      "nightLocation": "Hotel Anaheim"
+      "nightLocation": "Hotel Anaheim|https://holidayinn-suites-anaheim.h-rez.com/"
     },
     {
       "date": "2026-09-11",
       "label": "Vendredi 11 sept.",
-      "activities": ["Disneyland Anaheim (~$104-180/pers)"],
-      "nightLocation": "Hotel Anaheim"
+      "activities": [
+        "Option A — Disneyland Anaheim (~$104-180/pers)",
+        "Option B — Visite du centre d'Anaheim + chill"
+      ],
+      "nightLocation": "Hotel Anaheim|https://holidayinn-suites-anaheim.h-rez.com/"
     },
     {
       "date": "2026-09-12",
       "label": "Samedi 12 sept.",
       "activities": ["Blizzcon ($290/pers pour le week-end)"],
-      "nightLocation": "Hotel Anaheim"
+      "nightLocation": "Hotel Anaheim|https://holidayinn-suites-anaheim.h-rez.com/"
     },
     {
       "date": "2026-09-13",
       "label": "Dimanche 13 sept.",
       "activities": ["Blizzcon"],
-      "nightLocation": "Hotel Anaheim"
+      "nightLocation": "Hotel Anaheim|https://holidayinn-suites-anaheim.h-rez.com/"
     },
     {
       "date": "2026-09-14",
@@ -71,7 +66,8 @@
       "date": "2026-09-16",
       "label": "Mercredi 16 sept.",
       "activities": [
-        "Chill plage Venice Beach"
+        "Visite des Studios Warner le matin",
+        "Chill plage Venice Beach l'après-midi"
       ],
       "nightLocation": "Hôtel Venice Beach"
     },
@@ -79,14 +75,22 @@
       "date": "2026-09-17",
       "label": "Jeudi 17 sept.",
       "activities": [
-        "Uber Venice Beach → LAX (~$20-30)",
-        "Retour en France"
+        "Universal Studios Hollywood"
       ],
-      "nightLocation": null
+      "nightLocation": "Hôtel Venice Beach"
     },
     {
       "date": "2026-09-18",
       "label": "Vendredi 18 sept.",
+      "activities": [
+        "Uber Venice Beach → LAX (~$20-30)",
+        "Départ pour la France le soir"
+      ],
+      "nightLocation": null
+    },
+    {
+      "date": "2026-09-19",
+      "label": "Samedi 19 sept.",
       "activities": [
         "Arrivée en France"
       ],

@@ -357,6 +357,33 @@
       border-left-color: var(--amber);
     }
 
+    .activity.option {
+      border-left: 2px dashed var(--amber-dim);
+      background: rgba(212, 160, 83, 0.02);
+    }
+
+    .activity.option:hover {
+      border-left-color: var(--amber);
+    }
+
+    .activity.option .option-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-right: 0.3rem;
+    }
+
+    .options-divider {
+      text-align: center;
+      font-family: 'Cormorant', serif;
+      font-style: italic;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin: 0.2rem 0;
+    }
+
     .activity .price {
       color: var(--amber-dim);
       font-size: 0.78rem;
@@ -389,6 +416,17 @@
     .night:hover {
       border-color: var(--teal);
       background: rgba(42, 110, 98, 0.12);
+    }
+
+    .night a {
+      color: var(--teal);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(90, 184, 166, 0.3);
+      transition: border-color 0.25s ease;
+    }
+
+    .night a:hover {
+      border-bottom-color: var(--teal);
     }
 
     .night-icon { font-size: 0.9rem; flex-shrink: 0; }
@@ -576,13 +614,32 @@
       `;
 
       if (day.activities.length > 0) {
-        day.activities.forEach(a => {
-          const priceMatch = a.match(/(\(~?\$[\d,.\-\/]+(?:\/pers)?\))/);
-          if (priceMatch) {
-            const text = a.replace(priceMatch[0], '').trim();
-            html += `<div class="activity">${escapeHtml(text)} <span class="price">${escapeHtml(priceMatch[1])}</span></div>`;
+        let prevWasOption = false;
+        day.activities.forEach((a, idx) => {
+          const optionMatch = a.match(/^(Option [A-Z])\s*—\s*(.*)/);
+          if (optionMatch) {
+            if (prevWasOption) {
+              html += `<div class="options-divider">ou</div>`;
+            }
+            const tag = optionMatch[1];
+            const rest = optionMatch[2];
+            const priceMatch = rest.match(/(\(~?\$[\d,.\-\/]+(?:\/pers)?\))/);
+            if (priceMatch) {
+              const text = rest.replace(priceMatch[0], '').trim();
+              html += `<div class="activity option"><span class="option-tag">${escapeHtml(tag)}</span> ${escapeHtml(text)} <span class="price">${escapeHtml(priceMatch[1])}</span></div>`;
+            } else {
+              html += `<div class="activity option"><span class="option-tag">${escapeHtml(tag)}</span> ${escapeHtml(rest)}</div>`;
+            }
+            prevWasOption = true;
           } else {
-            html += `<div class="activity">${escapeHtml(a)}</div>`;
+            prevWasOption = false;
+            const priceMatch = a.match(/(\(~?\$[\d,.\-\/]+(?:\/pers)?\))/);
+            if (priceMatch) {
+              const text = a.replace(priceMatch[0], '').trim();
+              html += `<div class="activity">${escapeHtml(text)} <span class="price">${escapeHtml(priceMatch[1])}</span></div>`;
+            } else {
+              html += `<div class="activity">${escapeHtml(a)}</div>`;
+            }
           }
         });
       } else {
@@ -593,6 +650,12 @@
 
       if (day.nightLocation !== null) {
         const isUndefined = day.nightLocation === 'À définir';
+        const nightParts = day.nightLocation.split('|');
+        const nightName = nightParts[0];
+        const nightUrl = nightParts[1] || null;
+        const nightContent = nightUrl
+          ? `<a href="${escapeHtml(nightUrl)}" target="_blank" rel="noopener">${escapeHtml(nightName)}</a>`
+          : escapeHtml(nightName);
         html += `
           <div class="section-title" style="margin-top: auto;">
             <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -600,7 +663,7 @@
           </div>
           <div class="night ${isUndefined ? 'undefined' : ''}">
             <span class="night-icon">&#9790;</span>
-            <span class="night-text">${escapeHtml(day.nightLocation)}</span>
+            <span class="night-text">${nightContent}</span>
           </div>
         `;
       }

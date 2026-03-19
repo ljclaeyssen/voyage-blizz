@@ -9,9 +9,8 @@
       "date": "2026-09-10",
       "label": "Jeudi 10 sept.",
       "activities": [
-        "Départ de France le matin",
-        "Avion",
-        "Arrivée à LAX",
+        "Train départ : Lille Europe 5h59 → CDG 6h49",
+        "Avion départ : CDG 10h20 → LAX 12h55",
         "Uber LAX → Anaheim (~$55-70)",
         "Chill piscine de l'hotel"
       ],
@@ -84,7 +83,7 @@
       "label": "Vendredi 18 sept.",
       "activities": [
         "Uber Venice Beach → LAX (~$20-30)",
-        "Départ pour la France le soir"
+        "Avion retour : LAX 18h25 → CDG 14h15 (J+1)"
       ],
       "nightLocation": null
     },
@@ -92,7 +91,8 @@
       "date": "2026-09-19",
       "label": "Samedi 19 sept.",
       "activities": [
-        "Arrivée en France"
+        "Arrivée CDG 14h15",
+        "Train retour : CDG 16h08 → Lille Europe 16h59"
       ],
       "nightLocation": null
     }

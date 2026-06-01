@@ -11,7 +11,7 @@
       "activities": [
         "Train départ : Lille Europe 5h59 → CDG 6h49",
         "Avion départ : CDG 10h20 → LAX 12h55",
-        "Uber LAX → Anaheim (~$55-70)",
+        "Récup' voiture de location à LAX + route → Anaheim (~45 min)",
         "Chill piscine de l'hotel",
         "Concert 20h — World of Warcraft: 20 Years of Music|https://worldofwarcraft.helvepic.com/"
       ],
@@ -21,8 +21,8 @@
       "date": "2026-09-11",
       "label": "Vendredi 11 sept.",
       "activities": [
-        "Option A — Disneyland Anaheim (~$104-180/pers)",
-        "Option B — Visite du centre d'Anaheim + chill"
+        "Récup' du voyage / repos (jet lag)",
+        "Visite tranquille du centre d'Anaheim + chill"
       ],
       "nightLocation": "Hotel Anaheim|https://holidayinn-suites-anaheim.h-rez.com/"
     },
@@ -42,7 +42,7 @@
       "date": "2026-09-14",
       "label": "Lundi 14 sept.",
       "activities": [
-        "Uber Anaheim → Venice Beach (~$45-60)",
+        "Route Anaheim → Venice Beach (~50 min)",
         "Poser les affaires à l'hôtel",
         "In-N-Out Burger, tant qu'à faire !",
         "Balade à pied jusqu'à Santa Monica Pier",
@@ -56,9 +56,9 @@
       "activities": [
         "Metro vers Hollywood Blvd",
         "Walk of Fame / TCL Chinese Theatre, emblématiques",
-        "Uber vers Griffith Observatory (~$25-35)",
+        "Route vers Griffith Observatory",
         "Coucher de soleil sur LA, vue panoramique sur LA et Le Hollywood Sign, idéal en coucher de soleil",
-        "Uber Griffith → Venice Beach (~$25-35)"
+        "Retour Griffith → Venice Beach"
       ],
       "nightLocation": "Hôtel Venice Beach"
     },
@@ -66,8 +66,9 @@
       "date": "2026-09-16",
       "label": "Mercredi 16 sept.",
       "activities": [
-        "Visite des Studios Warner le matin",
-        "Chill plage Venice Beach l'après-midi"
+        "Visite des Studios Warner le matin (Burbank)",
+        "Aprem — Tour des villas des stars en redescendant vers Venice|https://starlinetours.com/tours/celebrity-homes-tour-from-hollywood/",
+        "Fin de journée chill plage Venice si le temps"
       ],
       "nightLocation": "Hôtel Venice Beach"
     },
@@ -83,7 +84,7 @@
       "date": "2026-09-18",
       "label": "Vendredi 18 sept.",
       "activities": [
-        "Uber Venice Beach → LAX (~$20-30)",
+        "Restitution voiture à LAX + route Venice → LAX (~20 min)",
         "Avion retour : LAX 18h25 → CDG 14h15 (J+1)"
       ],
       "nightLocation": null

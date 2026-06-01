@@ -390,6 +390,17 @@
       font-weight: 500;
     }
 
+    .activity a {
+      color: var(--teal);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(90, 184, 166, 0.3);
+      transition: border-color 0.25s ease;
+    }
+
+    .activity a:hover {
+      border-bottom-color: var(--teal);
+    }
+
     .no-activity {
       color: var(--text-muted);
       font-size: 0.85rem;
@@ -633,13 +644,16 @@
             prevWasOption = true;
           } else {
             prevWasOption = false;
-            const priceMatch = a.match(/(\(~?\$[\d,.\-\/]+(?:\/pers)?\))/);
-            if (priceMatch) {
-              const text = a.replace(priceMatch[0], '').trim();
-              html += `<div class="activity">${escapeHtml(text)} <span class="price">${escapeHtml(priceMatch[1])}</span></div>`;
-            } else {
-              html += `<div class="activity">${escapeHtml(a)}</div>`;
-            }
+            const linkParts = a.split('|');
+            const linkUrl = linkParts.length > 1 ? linkParts[1] : null;
+            const base = linkParts[0];
+            const priceMatch = base.match(/(\(~?\$[\d,.\-\/]+(?:\/pers)?\))/);
+            const text = priceMatch ? base.replace(priceMatch[0], '').trim() : base;
+            const content = linkUrl
+              ? `<a href="${escapeHtml(linkUrl)}" target="_blank" rel="noopener">${escapeHtml(text)}</a>`
+              : escapeHtml(text);
+            const price = priceMatch ? ` <span class="price">${escapeHtml(priceMatch[1])}</span>` : '';
+            html += `<div class="activity">${content}${price}</div>`;
           }
         });
       } else {

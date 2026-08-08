@@ -1,15 +1,24 @@
 {
   "trip": {
     "title": "Blizzcon 2026",
-    "startDate": "2026-09-10",
+    "startDate": "2026-09-09",
     "endDate": "2026-09-19"
   },
   "days": [
     {
+      "date": "2026-09-09",
+      "label": "Mercredi 9 sept.",
+      "activities": [
+        "Train départ : Lille Europe 18h25 → CDG 19h43",
+        "Nuit sur place pour éviter un train annulé le matin même"
+      ],
+      "nightLocation": "ibis Paris CDG Airport|https://all.accor.com/hotel/1404/index.fr.shtml"
+    },
+    {
       "date": "2026-09-10",
       "label": "Jeudi 10 sept.",
       "activities": [
-        "Train départ : Lille Europe 5h59 → CDG 6h49",
+        "Réveil tranquille, navette CDGVAL hôtel → terminal",
         "Avion départ : CDG 10h20 → LAX 12h55",
         "Récup la RAV4 à LAX + route → Anaheim (~45 min)",
         "Chill piscine de l'hotel",
